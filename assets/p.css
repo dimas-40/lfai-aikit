@@ -1,4 +1,4 @@
-/* carusworks 제품 라인 공통 — 메인 cw.css 위에 얹는 제품 전용 스타일 */
+/* LFAI 제품 라인 공통 — 메인 cw.css 위에 얹는 제품 전용 스타일 */
 .logo{display:flex;align-items:center;gap:10px}
 .ptag{font-family:var(--m);font-size:12px;font-weight:800;color:#fff;background:var(--blue);padding:3px 8px;letter-spacing:.04em}
 .phero{background:radial-gradient(110% 90% at 85% 0%,#15513c 0%,#0d2a21 45%,#061a13 100%);position:relative;overflow:hidden}
@@ -104,3 +104,14 @@
   .card .ch{display:none}
   .filt span{width:100%}
 }
+
+/* 첫 모듈 피처 */
+.feat{display:flex;justify-content:space-between;align-items:center;gap:24px;border:1px solid var(--ink);padding:22px 24px;margin-bottom:36px;transition:background .2s,border-color .2s}
+.feat:hover{background:var(--bg2);border-color:var(--blue)}
+.feat h2{font-size:22px;margin:4px 0 2px}
+.feat p{font-size:14px;color:var(--dim)}
+.feat .go{font-weight:700;color:var(--blue);white-space:nowrap}
+@media (max-width:760px){.feat{flex-direction:column;align-items:flex-start;gap:10px}}
+.mods.tools li{grid-template-columns:minmax(0,240px) minmax(0,1fr) auto}
+.mods.tools b{overflow-wrap:anywhere}
+@media (max-width:760px){.mods.tools li{grid-template-columns:1fr auto}}
